@@ -1,6 +1,6 @@
 import { CartIcon, ProfileIcon, SearchIcon } from "../../assets/icons";
 
-import { HamburgerMenu } from "../../ui/HamburgerMenu";
+import { HamburgerMenu } from "../HamburgerMenu";
 
 export default function Tools() {
   return (

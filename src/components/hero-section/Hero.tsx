@@ -1,7 +1,4 @@
-// import { useNavigate } from "react-router-dom";
-
 export default function Hero() {
-  // const navigate = useNavigate();
   return (
     <section className="~pt-20/4">
       <div className="flex flex-col-reverse mx-auto w-full ~gap-x-2/10 items-center ~px-1/6 max-w-7xl md:flex-row">
