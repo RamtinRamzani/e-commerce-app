@@ -2,9 +2,9 @@ name: Sync Organization Repo
 
 on:
   schedule:
-    - cron: "*/1 * * * *" # هر ساعت یک بار
-  workflow_dispatch: # قابلیت اجرای دستی
-  push: # در صورت آپدیت مخزن، اجرا می‌شود
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+  push:
     branches:
       - main
 
