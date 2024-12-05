@@ -1,0 +1,27 @@
+name: Sync Organization Repo
+
+on:
+  schedule:
+    - cron: '0 * * * *' # هر ساعت یک بار
+  workflow_dispatch: # قابلیت اجرای دستی
+  push: # در صورت آپدیت مخزن، اجرا می‌شود
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source repo
+      uses: actions/checkout@v3
+      with:
+        repository: organization-name/organization-repo-name
+        token: ${{ secrets.GH_TOKEN }}
+
+    - name: Push to personal repo
+      run: |
+        git config --global user.name "Your Name"
+        git config --global user.email "youremail@example.com"
+        git remote set-url origin https://$GH_TOKEN@github.com/yourusername/your-repo-name.git
+        git push --mirror
