@@ -22,7 +22,7 @@ jobs:
 
       - name: Push to personal repo
         run: |
-          git config --global user.name "Ramtin Ramzani"
+          git config --global user.name "RamtinRamzani"
           git config --global user.email "ramtinramzani76@gmail.com"
           git remote set-url origin https://$GH_TOKEN@github.com/RamtinRamzani/e-commerce-app.git
           git push --mirror
