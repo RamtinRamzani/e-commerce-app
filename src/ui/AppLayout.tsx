@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-import Header from "./header/Header";
-import Footer from "./Footer";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function AppLayout() {
   return (
-    <div className="bg-bg-color">
+    <div>
       <Header />
 
-      <main className="h-[3000px]">
+      <main className="mb-16">
         <Outlet />
       </main>
 

@@ -3,11 +3,11 @@ import Tools from "./Tools";
 import HeaderList from "./HeaderList";
 import { BottomArrow } from "../../assets/icons";
 import { Link } from "react-router-dom";
-import MainContainer from "../MainContainer";
+import MainContainer from "../../ui/MainContainer";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 z-0 w-full shadow-md bg-bg-color">
+    <header className="fixed top-0 left-0 z-[999] w-full shadow-md bg-bg-color">
       <MainContainer className="flex items-center justify-between h-[60px]">
         <Logo />
 
