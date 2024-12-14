@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { CartIcon, ProfileIcon, SearchIcon } from "../../assets/icons";
 
-import { HamburgerMenu } from "../../ui/HamburgerMenu";
+// import { HamburgerMenu } from "../../ui/HamburgerMenu";
 
 export default function Tools() {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export default function Tools() {
           2
         </span>
 
-        <HamburgerMenu />
+        {/* <HamburgerMenu /> */}
       </div>
     </ul>
   );

@@ -3,7 +3,7 @@ import { Checkbox, Input } from "@nextui-org/react";
 import { useForm } from "react-hook-form";
 import Button from "../../ui/Button";
 import Error from "./Error";
-import { useState } from "react";
+
 import { toast } from "react-hot-toast";
 
 type FormValues = {
@@ -15,7 +15,7 @@ type FormValues = {
 };
 
 export default function InputForm() {
-  const [formData, setFormData] = useState<FormValues | undefined>(undefined);
+  // const [formData, setFormData] = useState<FormValues | undefined>(undefined);
 
   const {
     register,
@@ -26,7 +26,7 @@ export default function InputForm() {
 
   function onSubmit(data: FormValues) {
     console.log("Form Data:", data);
-    setFormData(data);
+    // setFormData(data);
 
     toast.success(
       <div>

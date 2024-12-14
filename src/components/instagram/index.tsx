@@ -14,21 +14,15 @@ export default function Instagram() {
         <span className="text-neutral-04">@3legant_official</span>
       </div>
       <div className="flex flex-col w-full gap-8 sm:flex-row">
-        <img
-          className="h-full sm:w-1/3 md:w-1/4"
-          src="/images/instagram1.png"
-        />
-        <img
-          className="h-full sm:w-1/3 md:w-1/4"
-          src="/images/instagram2.png"
-        />
+        <img className="h-full sm:w-1/3 md:w-1/4" src="images/instagram1.png" />
+        <img className="h-full sm:w-1/3 md:w-1/4" src="images/instagram2.png" />
         <img
           className="hidden w-1/3 h-full sm:block md:w-1/4"
-          src="/images/instagram3.png"
+          src="images/instagram3.png"
         />
         <img
           className="hidden w-1/4 h-full md:block"
-          src="/images/instagram4.png"
+          src="images/instagram4.png"
         />
       </div>
     </MainContainer>
