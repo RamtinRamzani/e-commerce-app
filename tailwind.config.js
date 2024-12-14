@@ -1,7 +1,5 @@
-const { nextui } = require("@nextui-org/react");
-
-// tailwind.config.js
 import fluid, { extract, screens, fontSize } from "fluid-tailwind";
+import { nextui } from "@nextui-org/react";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -21,12 +19,10 @@ export default {
     extend: {
       colors: {
         primary: "var(--primary-color)",
-
         "secondary-blue": "var(--secondary-blue)",
         "secondary-green": "var(--secondary-green)",
         "secondary-orange": "var(--secondary-orange)",
         "secondary-red": "var(--secondary-red)",
-
         "neutral-01": "var(--neutral-01)",
         "neutral-02": "var(--neutral-02)",
         "neutral-03": "var(--neutral-03)",
@@ -34,7 +30,6 @@ export default {
         "neutral-05": "var(--neutral-05)",
         "neutral-06": "var(--neutral-06)",
         "neutral-07": "var(--neutral-07)",
-
         "bg-color": "var(--bg-color)",
       },
       fontSize: {
